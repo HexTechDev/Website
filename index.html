@@ -1,49 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>HexTech</title>
-    <meta name="description" content="HexTech is a development group centered around Linux and the open source technology that drives it. HexTech is comprised of a small group of developers of all ages who are working towards a common goal, To better the world of open source. Our leading principles are privacy, open source and security and we aim to ensure our software meets those standards.">
-    <meta name="author" content="HexTech, Chadano">
-    <meta content="Open-Source, foss, coding, programming, linux, projects, dev group, group, organisation, free, open source, software, youtube" name="keywords">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+    <meta
+      name="description"
+      content="HexTech is a development group centered around Linux and the open source technology that drives it. HexTech is comprised of a small group of developers of all ages who are working towards a common goal, To better the world of open source. Our leading principles are privacy, open source and security and we aim to ensure our software meets those standards."
+    />
+    <meta name="author" content="HexTech, Chadano" />
+    <meta
+      content="Open-Source, foss, coding, programming, linux, projects, dev group, group, organisation, free, open source, software, youtube"
+      name="keywords"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./src/assets/images/favicon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <meta content="#e03f4d" data-react-helmet="true" name="theme-color" />
     <!-- CSS and JavaScript -->
-    <link href="assets/css/style.css" rel="stylesheet">
-</head>
-<body>
-    
-    <div class="splash">
-        <div class="splash-text">
-            <img src="assets/images/favicon.png" class="splash-image" />
-            <h1>HexTech</h1>
-            <p>HexTech is a development group creating Open Source Software Solutions for Linux</p>
-            <ul>
-                <li><a href="https://github.com/hextechdev" class="button">GitHub</a></li>
-            </ul>
-        </div>
-        <div class="arrow">
-            <h1>˅</h1>
-        </div>
-    </div>
-
-    <div class="content">
-        <h1>About us</h1>
-        <p>HexTech is a development group centered around Linux and the open source technology that drives it. HexTech is comprised of a small group of developers of all ages who are working towards a common goal, To better the world of open source. Our leading principles are privacy, open source and security and we aim to ensure our software meets those standards.</p>
-        <h1>Our projects</h1>
+    <link href="./src/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="splash">
+      <div class="splash-text">
+        <img src="./src/assets/images/favicon.png" class="splash-image" />
+        <h1>HexTech</h1>
         <p>
-            <a href="https://rollingrhino.org" target="_blank">Rolling Rhino Remix</a> - I am the founder and current Project Lead of Rolling Rhino Remix. Rolling Rhino Remix is a Linux distribution that converts Ubuntu into a Rolling Release distribution. Rolling Rhino Remix has many distribution-specific features and utilities specifically created for the distribution.
+          HexTech is a development group creating Open Source Software Solutions
+          for Linux
         </p>
-        <p>
-            <a href="https://github.com/chadano/chadachat" target="_blank">SCAchat</a> - SCAchat is a self-hosted chatting application similar to AOL Instant Messenger. The chatting application is privacy-respecting and does not store any messages or user-data. Once a session has ended, all messages are gone.
-        </p>
-        <p>
-            <a href="https://github.com/catiumde/skywm">skyWM</a> - skyWM is a minimalistic window manager written in Rust. skyWM takes inspiration from the Unix philosophy of doing one thing and doing it well. skyWM has now become a part of the CatiumDE utilities and is maintained under one organisation. 
-        </p>
-    </div>
-
-    <div class="footer">
-        <p>HexChat (c) 2022</p>
-    </div>
-
-</body>
+        <ul>
+          <li>
+            <a href="https://github.com/hextechdev" class="button">GitHub</a>
+          </li>
+        </ul>
+      </div>
+      <div class="arrow">
+        <a href="#about">˅</a>
+      </div>
+    </header>
+    <main id="about" class="content">
+      <h1>About us</h1>
+      <p>
+        HexTech is a development group centered around Linux and the open source
+        technology that drives it. HexTech is comprised of a small group of
+        developers of all ages who are working towards a common goal, To better
+        the world of open source. Our leading principles are privacy, open
+        source and security and we aim to ensure our software meets those
+        standards.
+      </p>
+      <h1>Our projects</h1>
+      <p>
+        <a href="https://rollingrhino.org" target="_blank"
+          >Rolling Rhino Remix</a
+        >
+        - I am the founder and current Project Lead of Rolling Rhino Remix.
+        Rolling Rhino Remix is a Linux distribution that converts Ubuntu into a
+        Rolling Release distribution. Rolling Rhino Remix has many
+        distribution-specific features and utilities specifically created for
+        the distribution.
+      </p>
+      <p>
+        <a href="https://github.com/chadano/chadachat" target="_blank"
+          >SCAchat</a
+        >
+        - SCAchat is a self-hosted chatting application similar to AOL Instant
+        Messenger. The chatting application is privacy-respecting and does not
+        store any messages or user-data. Once a session has ended, all messages
+        are gone.
+      </p>
+      <p>
+        <a href="https://github.com/catiumde/skywm" target="_blank">skyWM</a>
+        - skyWM is a minimalistic window manager written in Rust. skyWM takes
+        inspiration from the Unix philosophy of doing one thing and doing it
+        well. skyWM has now become a part of the CatiumDE utilities and is
+        maintained under one organisation.
+      </p>
+    </main>
+    <footer>
+      <p>HexChat (c) 2022</p>
+    </footer>
+  </body>
+</html>

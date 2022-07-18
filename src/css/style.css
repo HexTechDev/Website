@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --background: #2d2d2d;
+  --accent: #e03f4d;
+  --text: #c4c4c4;
+  --text-splash: white;
+  --footer: #333333;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+  color: var(--text);
+  background-color: var(--background);
+  scroll-behavior: smooth;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Header */
+
+.splash {
+  /* The image used */
+  background-image: url("../assets/images/splash.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.splash-text {
+  padding: 16% 0;
+  text-align: center;
+  color: var(--text-splash);
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.splash-image {
+  width: 8%;
+}
+
+/* Responsive text size */
+h1 {
+  font-size: 5vh;
+  margin-top: 16px;
+}
+
+p {
+  font-size: 2vh;
+  margin-bottom: 16px;
+}
+
+a {
+  font-size: 2vh;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.button {
+  justify-content: space-evenly;
+  border-width: 2.5px;
+  border-style: solid;
+  border-color: var(--accent);
+  border-radius: 8px;
+  color: var(--text-splash);
+  padding: 4px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+ul li {
+  display: inline;
+}
+
+.arrow {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  vertical-align: bottom;
+  width: 100%;
+  color: var(--text-splash);
+}
+
+.arrow a {
+  font-weight: 700;
+  color: var(--text-splash);
+  text-decoration: none;
+  font-size: 5vh;
+  margin-top: 16px;
+}
+
+
+/* Main */
+
+.content {
+  margin: auto;
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+}
+
+.content h1 {
+  color: var(--accent) !important;
+}
+
+.content p {
+  margin-top: 16px;
+}
+
+/* Footer */
+
+footer {
+  width: 100% - 16px;
+  text-align: center;
+  color: var(--accent);
+  background-color: var(--footer);
+  padding: 16px;
+}
+
+footer p {
+  margin-top: 16px;
+}
+
+/* Mobile Optimisations */
+@media only screen and (max-width: 1026px) {
+  .content {
+    width: 90%;
+    padding: 20px;
+    margin-top: 16px;
+  }
+
+  h1 {
+    margin-top: 32px;
+  }
+
+  p {
+    margin-bottom: 32px;
+  }
+
+  .splash-text {
+    padding: 75% 0;
+    text-align: center;
+    color: var(--text-splash);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .splash-image {
+    width: 20%;
+  }
+}
